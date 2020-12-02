@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CRUDSample.AddEmployeePage" Title="Add Employee">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="Nombre" FontSize="Medium" FontAttributes="Bold" TextColor="DodgerBlue"/>
+            <Entry Placeholder="Nombre" Margin="5" FontSize="Medium" HorizontalOptions="FillAndExpand" x:Name="name"/>
+            <Label Text="NIT" FontSize="Medium" FontAttributes="Bold" TextColor="DodgerBlue"/>
+            <Entry Placeholder="00-0000-000-0" Margin="5" FontSize="Medium" HorizontalOptions="FillAndExpand" x:Name="nit"/>
+            <Label Text="DUI" FontSize="Medium" FontAttributes="Bold" TextColor="DodgerBlue"/>
+            <Entry Placeholder="00000000-0" Margin="5" FontSize="Medium" HorizontalOptions="FillAndExpand" x:Name="dui" 
+                   Keyboard="Numeric"/>
+
+            <Frame Margin="10" Padding="0" CornerRadius="15" HasShadow="True" HorizontalOptions="FillAndExpand" IsClippedToBounds="False">
+                <Button Text="Guardar" Clicked="SaveEmployee" HorizontalOptions="FillAndExpand" 
+                    BackgroundColor="DodgerBlue" TextColor="White" x:Name="saveBtn"/>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

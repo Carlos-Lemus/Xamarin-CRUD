@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xf:BottomBarPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CRUDSample.NavBar"
+             xmlns:xf="clr-namespace:BottomBar.XamarinForms;assembly=BottomBar.XamarinForms"
+             xmlns:local="clr-namespace:CRUDSample"
+             Title="APP Anticipos">
+
+    <local:EmployeePage Title="Usuarios"
+                 Icon="user.png"/>
+
+    <local:ExpensePage Title="Gastos"
+                 Icon="expenses.png"
+                 xf:BottomBarPageExtensions.TabColor="#5D4037"/>
+
+    <ContentPage Title="Totales"
+                 Icon="money.png"
+                 xf:BottomBarPageExtensions.TabColor="#7B1FA2"/>
+</xf:BottomBarPage>

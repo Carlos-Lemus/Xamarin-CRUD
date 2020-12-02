@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CRUDSample.ExpensePage">
+    <StackLayout Padding="5">
+        <Frame Margin="10" Padding="0" CornerRadius="15" HasShadow="True" HorizontalOptions="FillAndExpand" IsClippedToBounds="False">
+            <Button Text="AGREGAR SALIDA" HorizontalOptions="FillAndExpand" 
+                BackgroundColor="Orange" TextColor="Black" Clicked="AddSalida"/>
+        </Frame>
+
+        <ListView x:Name="SaliList" HasUnevenRows="True" ItemTapped="EditSalida">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.ContextActions>
+                            <MenuItem Text="Borrar" Clicked="DeleteSalida" IsDestructive="true" CommandParameter="{Binding .}"/>
+                        </ViewCell.ContextActions>
+                        <StackLayout Spacing="2" Padding="10">
+                            <Label Text="{Binding Des,StringFormat='Descripción: {0:F0}'}" FontSize="Medium" TextColor="Orange" FontAttributes="Bold"/>
+                            <Label Text="{Binding Fecha,StringFormat='Fecha: {0:F0}'}" FontSize="Medium" FontAttributes="None"/>
+                            <Label Text="{Binding Monto,StringFormat='Monto: {0:F0}'}" FontSize="Medium" FontAttributes="None"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
