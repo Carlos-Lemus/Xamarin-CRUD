@@ -16,10 +16,6 @@ namespace CRUDSample
         bool UpdateEmployee(Employee employee);
         void DeleteEmployee(int Id);
 
-
-
-
-
         bool SaveSalida(Salida salida);
 
         List<Salida> GetSalidas();

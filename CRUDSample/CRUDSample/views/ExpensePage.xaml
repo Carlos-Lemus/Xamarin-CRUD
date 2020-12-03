@@ -12,8 +12,7 @@
 
         <ScrollView Grid.Row="0">
             <StackLayout Padding="5">
-
-                <ListView x:Name="SaliList" HasUnevenRows="True" ItemTapped="EditSalida">
+                <ListView x:Name="SaliList" HasUnevenRows="True">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
@@ -23,7 +22,7 @@
                                 <StackLayout Spacing="2" Padding="10">
                                     <Label Text="{Binding Des,StringFormat='Descripción: {0:F0}'}" FontSize="Medium" TextColor="Orange" FontAttributes="Bold"/>
                                     <Label Text="{Binding Fecha,StringFormat='Fecha: {0:F0}'}" FontSize="Medium" FontAttributes="None"/>
-                                    <Label Text="{Binding Monto,StringFormat='Monto: {0:F0}'}" FontSize="Medium" FontAttributes="None"/>
+                                    <Label Text="{Binding Monto,StringFormat='Monto: ${0:0.00}'}" FontSize="Medium" FontAttributes="None"/>
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>
@@ -38,6 +37,5 @@
                 BackgroundColor="Orange" TextColor="White" Clicked="AddSalida"/>
 
     </Grid>
-    
-    
 </ContentPage>
+    

@@ -41,6 +41,7 @@ namespace CRUDSample.Droid
             }
             catch (Exception ex)
             {
+                Xamarin.Forms.Application.Current.MainPage.DisplayAlert("Mensaje", ex.Message, "Ok");
                 res = false;
             }
             return res;
@@ -65,7 +66,7 @@ namespace CRUDSample.Droid
             }
             catch (Exception ex)
             {
-
+                Xamarin.Forms.Application.Current.MainPage.DisplayAlert("Mensaje", ex.Message, "Ok");
             }
             return res;
         }
@@ -86,6 +87,7 @@ namespace CRUDSample.Droid
             }
             catch (Exception ex)
             {
+                Xamarin.Forms.Application.Current.MainPage.DisplayAlert("Mensaje", ex.Message, "Ok");
                 res = false;
             }
             return res;
@@ -158,17 +160,17 @@ namespace CRUDSample.Droid
 
         public List<GastosEmployee> FilterGastosEmployee(string fechaInicio, string fechaFinal)
         {
-            string[] fechaInicioItems = fechaInicio.Split("/");
-            string[] fechaFinalItems = fechaFinal.Split("/");
+            DateTime fechaInicio__date = DateTime.Parse(fechaInicio);
+            DateTime fechaFinal__date = DateTime.Parse(fechaFinal);
 
-            int dayInicio = Convert.ToInt32(fechaInicioItems[1]);
-            int monthInicio = Convert.ToInt32(fechaInicioItems[0]);
-            int yearInicio = Convert.ToInt32(fechaInicioItems[2]);
+            int dayInicio = fechaInicio__date.Day;
+            int monthInicio = fechaInicio__date.Month;
+            int yearInicio = fechaInicio__date.Year;
 
-            int dayFinal = Convert.ToInt32(fechaFinalItems[1]);
-            int monthFinal = Convert.ToInt32(fechaFinalItems[0]);
-            int yearFinal = Convert.ToInt32(fechaFinalItems[2]);
-
+            int dayFinal = fechaFinal__date.Day; 
+            int monthFinal = fechaFinal__date.Month;
+            int yearFinal = fechaFinal__date.Year;
+          
             List<GastosEmployee> gastos = new List<GastosEmployee>();
 
             foreach (Employee employee in GetEmployees())
@@ -177,11 +179,13 @@ namespace CRUDSample.Droid
 
                 foreach (Salida salida in GetSalidas())
                 {
-                    string[] fechaCurrent = salida.Fecha.Split("/");
-                    int dayCurrent = Convert.ToInt32(fechaCurrent[1]);
-                    int monthCurrent = Convert.ToInt32(fechaCurrent[0]);
-                    int yearCurrent = Convert.ToInt32(fechaCurrent[2]);
 
+                    //string[] fechaCurrent = salida.Fecha.Split("/");
+                    int dayCurrent = DateTime.Now.Day; 
+                    int monthCurrent = DateTime.Now.Month;
+                    int yearCurrent = DateTime.Now.Year;
+
+                                   
                     if (employee.Id == salida.Id)
                     {
                         if (yearCurrent > yearInicio || yearCurrent < yearFinal)
@@ -288,10 +292,9 @@ namespace CRUDSample.Droid
 
                             continue;
                         }
-                    }
+                    } 
 
                 }
-
             }
 
             return gastos;
@@ -322,7 +325,6 @@ namespace CRUDSample.Droid
             {
                 idLista.Add(employee.Id.ToString());
             }
-
             return idLista;
         }
 

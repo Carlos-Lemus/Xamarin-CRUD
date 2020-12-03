@@ -29,7 +29,8 @@ namespace CRUDSample
         private void PopulateDetails(Salida details)
         {
             des.Text = details.Des;
-            fecha.Date = DateTime.ParseExact(details.Fecha, "M/d/yyyy", null);
+            fecha.Date = DateTime.Parse(details.Fecha); 
+            //DateTime.ParseExact(details.Fecha, "M/d/yyyy", null)
             monto.Text = details.Monto.ToString();
             Btn.Text = "Modificar";
             this.Title = "Editar Salida";
@@ -43,7 +44,7 @@ namespace CRUDSample
                 salida.Ids = id;
                 salida.Des = des.Text;
                 salida.Fecha = fecha.Date.ToShortDateString().ToString();
-                salida.Monto = Convert.ToDouble(monto.Text);
+                salida.Monto = Convert.ToDouble(String.Format("{0:0.##}", monto.Text));
                 salida.Id = Convert.ToInt32(pickerEmployee.SelectedItem.ToString());
 
                 bool res = DependencyService.Get<ISQLite>().SaveSalida(salida);

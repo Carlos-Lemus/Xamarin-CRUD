@@ -1067,24 +1067,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\carlo\\.nuget\\packages\\": {},
+    "C:\\Users\\DELL\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carlo\\Downloads\\Xamarin-CRUD\\CRUDSample\\CRUDSample.iOS\\CRUDSample.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\Documents\\GitHub\\Xamarin-CRUD\\CRUDSample\\CRUDSample.iOS\\CRUDSample.iOS.csproj",
       "projectName": "CRUDSample.iOS",
-      "projectPath": "C:\\Users\\carlo\\Downloads\\Xamarin-CRUD\\CRUDSample\\CRUDSample.iOS\\CRUDSample.iOS.csproj",
-      "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carlo\\Downloads\\Xamarin-CRUD\\CRUDSample\\CRUDSample.iOS\\obj\\",
+      "projectPath": "C:\\Users\\DELL\\Documents\\GitHub\\Xamarin-CRUD\\CRUDSample\\CRUDSample.iOS\\CRUDSample.iOS.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DELL\\Documents\\GitHub\\Xamarin-CRUD\\CRUDSample\\CRUDSample.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1098,8 +1098,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\carlo\\Downloads\\Xamarin-CRUD\\CRUDSample\\CRUDSample\\CRUDSample.csproj": {
-              "projectPath": "C:\\Users\\carlo\\Downloads\\Xamarin-CRUD\\CRUDSample\\CRUDSample\\CRUDSample.csproj"
+            "C:\\Users\\DELL\\Documents\\GitHub\\Xamarin-CRUD\\CRUDSample\\CRUDSample\\CRUDSample.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Documents\\GitHub\\Xamarin-CRUD\\CRUDSample\\CRUDSample\\CRUDSample.csproj"
             }
           }
         }

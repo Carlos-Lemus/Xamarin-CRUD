@@ -35,7 +35,7 @@
                                 <ViewCell>
                                     <StackLayout Spacing="2" Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                                         <Label Text="{Binding Name,StringFormat='Nombre: {0:F0}'}" FontSize="Medium" TextColor="DodgerBlue" FontAttributes="Bold"/>
-                                        <Label Text="{Binding Monto,StringFormat='Monto: {0:F0}'}" FontSize="Medium" FontAttributes="None"/>
+                                        <Label Text="{Binding Monto,StringFormat='Monto:  ${0:0.00}'}" FontSize="Medium" FontAttributes="None"/>
                                         <Label Text="{Binding Fecha,StringFormat='Fecha: {0:F0}'}" FontSize="Medium" FontAttributes="None"/>
                                     </StackLayout>
                                 </ViewCell>

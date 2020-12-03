@@ -20,12 +20,13 @@
                         <DataTemplate>
                             <ViewCell>
                                 <ViewCell.ContextActions>
-                                    <MenuItem Text="Borrar" Clicked="DeleteEmployee" IsDestructive="true" CommandParameter="{Binding .}"/>
+                                    <MenuItem Text="Borrar" IsDestructive="true" CommandParameter="{Binding .}"/>
                                 </ViewCell.ContextActions>
                                 <StackLayout Spacing="2" Padding="10">
                                     <Label Text="{Binding Name,StringFormat='Nombre: {0:F0}'}" FontSize="Medium" TextColor="DodgerBlue" FontAttributes="Bold"/>
                                     <Label Text="{Binding Nit,StringFormat='NIT: {0:F0}'}" FontSize="Medium" FontAttributes="None"/>
                                     <Label Text="{Binding Dui,StringFormat='DUI: {0:F0}'}" FontSize="Medium" FontAttributes="None"/>
+                                    <Label Text="{Binding Id,StringFormat='Id: {0:F0}'}" FontSize="Medium" FontAttributes="None"/>
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>

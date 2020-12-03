@@ -16,7 +16,6 @@ namespace CRUDSample
         [MaxLength(256)]
         public string Nit { get; set; }
     }
-
     public class Salida
     {
         [PrimaryKey, AutoIncrement]
@@ -30,7 +29,6 @@ namespace CRUDSample
         [Indexed]
         public int Id { get; set; }
     }
-
     public class GastosEmployee
     {
         public string Name { get; set; }

@@ -74,12 +74,7 @@ C:\Users\DELL\Documents\GitHub\Xamarin-CRUD\CRUDSample\CRUDSample\bin\Debug\nets
 C:\Users\DELL\Documents\GitHub\Xamarin-CRUD\CRUDSample\CRUDSample\bin\Debug\netstandard2.0\CRUDSample.dll
 C:\Users\DELL\Documents\GitHub\Xamarin-CRUD\CRUDSample\CRUDSample\bin\Debug\netstandard2.0\CRUDSample.pdb
 C:\Users\DELL\Documents\GitHub\Xamarin-CRUD\CRUDSample\CRUDSample\obj\Debug\netstandard2.0\CRUDSample.csprojAssemblyReference.cache
-C:\Users\DELL\Documents\GitHub\Xamarin-CRUD\CRUDSample\CRUDSample\obj\Debug\netstandard2.0\AddEmployeePage.xaml.g.cs
-C:\Users\DELL\Documents\GitHub\Xamarin-CRUD\CRUDSample\CRUDSample\obj\Debug\netstandard2.0\AddSalida.xaml.g.cs
 C:\Users\DELL\Documents\GitHub\Xamarin-CRUD\CRUDSample\CRUDSample\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Users\DELL\Documents\GitHub\Xamarin-CRUD\CRUDSample\CRUDSample\obj\Debug\netstandard2.0\EmployeePage.xaml.g.cs
-C:\Users\DELL\Documents\GitHub\Xamarin-CRUD\CRUDSample\CRUDSample\obj\Debug\netstandard2.0\ExpensePage.xaml.g.cs
-C:\Users\DELL\Documents\GitHub\Xamarin-CRUD\CRUDSample\CRUDSample\obj\Debug\netstandard2.0\NavBar.xaml.g.cs
 C:\Users\DELL\Documents\GitHub\Xamarin-CRUD\CRUDSample\CRUDSample\obj\Debug\netstandard2.0\CRUDSample.AssemblyInfoInputs.cache
 C:\Users\DELL\Documents\GitHub\Xamarin-CRUD\CRUDSample\CRUDSample\obj\Debug\netstandard2.0\CRUDSample.AssemblyInfo.cs
 C:\Users\DELL\Documents\GitHub\Xamarin-CRUD\CRUDSample\CRUDSample\obj\Debug\netstandard2.0\CRUDSample.csproj.CoreCompileInputs.cache
@@ -103,3 +98,9 @@ C:\Users\carlo\Downloads\Xamarin-CRUD\CRUDSample\CRUDSample\obj\Debug\netstandar
 C:\Users\carlo\Downloads\Xamarin-CRUD\CRUDSample\CRUDSample\obj\Debug\netstandard2.0\views\ExpensePage.xaml.g.cs
 C:\Users\carlo\Downloads\Xamarin-CRUD\CRUDSample\CRUDSample\obj\Debug\netstandard2.0\views\NavBar.xaml.g.cs
 C:\Users\carlo\Downloads\Xamarin-CRUD\CRUDSample\CRUDSample\obj\Debug\netstandard2.0\views\ReportePage.xaml.g.cs
+C:\Users\DELL\Documents\GitHub\Xamarin-CRUD\CRUDSample\CRUDSample\obj\Debug\netstandard2.0\views\AddEmployeePage.xaml.g.cs
+C:\Users\DELL\Documents\GitHub\Xamarin-CRUD\CRUDSample\CRUDSample\obj\Debug\netstandard2.0\views\AddSalida.xaml.g.cs
+C:\Users\DELL\Documents\GitHub\Xamarin-CRUD\CRUDSample\CRUDSample\obj\Debug\netstandard2.0\views\EmployeePage.xaml.g.cs
+C:\Users\DELL\Documents\GitHub\Xamarin-CRUD\CRUDSample\CRUDSample\obj\Debug\netstandard2.0\views\ExpensePage.xaml.g.cs
+C:\Users\DELL\Documents\GitHub\Xamarin-CRUD\CRUDSample\CRUDSample\obj\Debug\netstandard2.0\views\NavBar.xaml.g.cs
+C:\Users\DELL\Documents\GitHub\Xamarin-CRUD\CRUDSample\CRUDSample\obj\Debug\netstandard2.0\views\ReportePage.xaml.g.cs
