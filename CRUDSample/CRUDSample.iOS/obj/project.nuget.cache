@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "pqhZa8I0uCZ1CwYzggSDoWhXktBMzk2DVFsi8FX2DatHZtbtdc07ycMI0W2/Cihen3KyYuD0W+v04U65JIUXBw==",
+  "dgSpecHash": "2x/LMHWpyDjOnElznrOpAfLTUtlpd8PULOeQ9jW7Pjr+YwzgRv7afDDb2cMyDlUjb/jenBWDdGK/Unqh7N0q7w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\carlo\\source\\repos\\Xamarin-CRUD\\CRUDSample\\CRUDSample.iOS\\CRUDSample.iOS.csproj",
+  "projectFilePath": "C:\\Users\\DELL\\Documents\\GitHub\\Xamarin-CRUD\\CRUDSample\\CRUDSample.iOS\\CRUDSample.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\carlo\\.nuget\\packages\\sqlite-net-pcl\\1.5.231\\sqlite-net-pcl.1.5.231.nupkg.sha512",
-    "C:\\Users\\carlo\\.nuget\\packages\\sqlitepclraw.bundle_green\\1.1.11\\sqlitepclraw.bundle_green.1.1.11.nupkg.sha512",
-    "C:\\Users\\carlo\\.nuget\\packages\\sqlitepclraw.core\\1.1.11\\sqlitepclraw.core.1.1.11.nupkg.sha512",
-    "C:\\Users\\carlo\\.nuget\\packages\\sqlitepclraw.provider.sqlite3.ios_unified\\1.1.11\\sqlitepclraw.provider.sqlite3.ios_unified.1.1.11.nupkg.sha512",
-    "C:\\Users\\carlo\\.nuget\\packages\\thrivegmbh.bottomnavigationbar.xf\\1.0.2\\thrivegmbh.bottomnavigationbar.xf.1.0.2.nupkg.sha512",
-    "C:\\Users\\carlo\\.nuget\\packages\\xamarin.forms\\3.3.0.967583\\xamarin.forms.3.3.0.967583.nupkg.sha512"
+    "C:\\Users\\DELL\\.nuget\\packages\\sqlite-net-pcl\\1.5.231\\sqlite-net-pcl.1.5.231.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\sqlitepclraw.bundle_green\\1.1.11\\sqlitepclraw.bundle_green.1.1.11.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\sqlitepclraw.core\\1.1.11\\sqlitepclraw.core.1.1.11.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\sqlitepclraw.provider.sqlite3.ios_unified\\1.1.11\\sqlitepclraw.provider.sqlite3.ios_unified.1.1.11.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\thrivegmbh.bottomnavigationbar.xf\\1.0.2\\thrivegmbh.bottomnavigationbar.xf.1.0.2.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\xamarin.forms\\3.3.0.967583\\xamarin.forms.3.3.0.967583.nupkg.sha512"
   ],
   "logs": []
 }

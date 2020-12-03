@@ -4,7 +4,9 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+                          
              x:Class="CRUDSample.EmployeePage">
+    
     <StackLayout Padding="5">
         <Frame Margin="10" Padding="0" CornerRadius="15" HasShadow="True" HorizontalOptions="FillAndExpand" IsClippedToBounds="False">
             <Button Text="AGREGAR EMPLEADO" HorizontalOptions="FillAndExpand" 

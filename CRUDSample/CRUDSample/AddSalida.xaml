@@ -3,21 +3,75 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             x:Class="CRUDSample.AddSalida" Title="Agregar Salida">
+             x:Class="CRUDSample.AddSalida" Title="Agregar Salida"
+              xmlns:local2="clr-namespace:CRUDSample.Validaciones">
+    <!-- Se agrega la direccion donde estan la validaciones   -->
+    
     <ContentPage.Content>
         <StackLayout Padding="10">
+
+            <!-- Aqui inicia lo del campo Descripcion   -->
             <Label Text="Descripción" FontSize="Medium" FontAttributes="Bold" TextColor="Orange"/>
-            <Entry Placeholder="Pago de..." FontSize="Medium" HorizontalOptions="FillAndExpand" x:Name="des"/>
+            <Entry Placeholder="Pago de..." FontSize="Medium" HorizontalOptions="FillAndExpand" x:Name="des">
+                <!-- Se agregan el Behavior correspondiente  -->
+                <Entry.Behaviors>
+                    <local2:DescripcionValidatorBehavior
+                     x:Name="descripcion_txt"></local2:DescripcionValidatorBehavior>
+                </Entry.Behaviors>
+            </Entry>
+            <!-- Este label muestra el mensaje que viene desde la clase de validacion    -->            <Label x:Name="lbl4" BindingContext="{x:Reference Name=descripcion_txt}" Text="{Binding Path=msgDescripcion}" TextColor="Red"></Label>            <!-- En este se guarda el valor de la variable booleana Validacion, esto se hace para usarlo en el MultiTrigger    -->            <Label x:Name="descripcion_valido" BindingContext="{x:Reference Name=descripcion_txt}" Text="{Binding Path=DescripcionValido}" FontSize="5" IsVisible="False"></Label>
+
+
+
+            <!-- Aqui inicia lo del campo Fecha    -->
             <Label Text="Fecha" FontSize="Medium" FontAttributes="Bold" TextColor="Orange"/>
-            <DatePicker HorizontalOptions="FillAndExpand" FontSize="Medium" x:Name="fecha"></DatePicker>
+            <DatePicker HorizontalOptions="FillAndExpand" FontSize="Medium" x:Name="fecha">
+                <!-- Se agregan el Behavior correspondiente  -->
+                <DatePicker.Behaviors>
+                    <local2:FechaValidatorBehavior
+                     x:Name="fecha_v"></local2:FechaValidatorBehavior>
+                </DatePicker.Behaviors>
+            </DatePicker>
+            <!-- Este label muestra el mensaje que viene desde la clase de validacion    -->            <Label x:Name="lbl5" BindingContext="{x:Reference Name=fecha_v}" Text="{Binding Path=msgFecha}" TextColor="Red"></Label>            <!-- En este se guarda el valor de la variable booleana Validacion, esto se hace para usarlo en el MultiTrigger    -->            <Label x:Name="fecha_valido" BindingContext="{x:Reference Name=fecha_v}" Text="{Binding Path=FechaValido}" FontSize="5" IsVisible="False"></Label>
+
+
+            <!-- Aqui inicia lo del campo Monto    -->
             <Label Text="Monto" FontSize="Medium" FontAttributes="Bold" TextColor="Orange"/>
-            <Entry Placeholder="00.00" FontSize="Medium" HorizontalOptions="FillAndExpand" x:Name="monto" 
-                   Keyboard="Numeric"/>
+            <Entry Placeholder="00.00" FontSize="Medium" HorizontalOptions="FillAndExpand" x:Name="monto">
+                <!-- Se agregan el Behavior correspondiente  -->
+                <Entry.Behaviors>
+                    <local2:MontoValidatorBehavior
+                     x:Name="monto_txt"></local2:MontoValidatorBehavior>
+                </Entry.Behaviors>
+            </Entry>
+            <!-- Este label muestra el mensaje que viene desde la clase de validacion    -->            <Label x:Name="lbl6" BindingContext="{x:Reference Name=monto_txt}" Text="{Binding Path=msgMonto}" TextColor="Red"></Label>            <!-- En este se guarda el valor de la variable booleana Validacion, esto se hace para usarlo en el MultiTrigger    -->            <Label x:Name="monto_valido" BindingContext="{x:Reference Name=monto_txt}" Text="{Binding Path=MontoValido}" FontSize="5" IsVisible="False"></Label>
+
 
             <Frame Margin="10" Padding="0" CornerRadius="15" HasShadow="True" HorizontalOptions="FillAndExpand" IsClippedToBounds="False">
+                
+                <!-- Al boton se le agrega el MultiTrigger para comprobar que el valor de las tres validaciones sea True, y entonces activar el botón   -->
                 <Button Text="Guardar" Clicked="SaveSalida" HorizontalOptions="FillAndExpand" 
-                    BackgroundColor="Orange" TextColor="White" x:Name="Btn"/>
+                    BackgroundColor="Orange" TextColor="White" x:Name="Btn" IsEnabled="False">
+                    <!-- Se inicia con el botón desactivado -->
+                    <Button.Triggers>
+                        <MultiTrigger TargetType="Button">
+                            <MultiTrigger.Conditions>
+                                <!-- Aqui estan las tres condiciones para activar el boton, son los valores de las variables de validacion,
+                                todas deben ser True para cumplirse la condición -->
+                                <BindingCondition Binding="{Binding Source={x:Reference descripcion_valido}, Path=Text }" Value="True"  />
+                                <BindingCondition Binding="{Binding Source={x:Reference fecha_valido}, Path=Text}" Value="True" />
+                                <BindingCondition Binding="{Binding Source={x:Reference monto_valido}, Path=Text}" Value="True" />
+                            </MultiTrigger.Conditions>
+                            <!-- Cuando la condicion se cumple se activa el botón -->
+                            <Setter Property = "IsEnabled" Value = "True" />
+                        </MultiTrigger>
+                    </Button.Triggers>
+
+                </Button>
+
+
             </Frame>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
