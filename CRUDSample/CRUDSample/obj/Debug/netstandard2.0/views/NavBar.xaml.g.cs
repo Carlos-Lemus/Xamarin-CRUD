@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CRUDSample.NavBar.xaml", "NavBar.xaml", typeof(global::CRUDSample.NavBar))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CRUDSample.views.NavBar.xaml", "views/NavBar.xaml", typeof(global::CRUDSample.NavBar))]
 
 namespace CRUDSample {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("NavBar.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("views\\NavBar.xaml")]
     public partial class NavBar : global::BottomBar.XamarinForms.BottomBarPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

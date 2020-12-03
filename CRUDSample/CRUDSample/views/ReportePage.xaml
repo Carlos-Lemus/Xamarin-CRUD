@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CRUDSample.ReportePage">
+    <ContentPage.Content>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <ScrollView Grid.Row="0">
+
+                <StackLayout>
+                    <Frame Margin="0,20,0,20">
+                        <Label FontSize="20" FontAttributes="Bold"
+                        x:Name="lblTotalGastos" Text="Total de gastos: $ ">
+                        </Label>
+                    </Frame>
+
+                    <StackLayout Padding="10">
+                        <Label Text="Filtrar por un periodo de fechas" FontSize="18" FontAttributes="Bold">
+                        </Label>
+                        <Label Text="Fecha de inicio:" FontSize="Medium" FontAttributes="Bold">
+                        </Label>
+                        <DatePicker FontSize="Medium" x:Name="dpInicio"></DatePicker>
+                        <Label Text="Fecha de finalizacion:" FontSize="Medium" FontAttributes="Bold">
+                        </Label>
+                        <DatePicker FontSize="Medium" x:Name="dpFinal"></DatePicker>
+                    </StackLayout>
+
+                    <ListView x:Name="GastosList" HasUnevenRows="True">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Spacing="2" Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                        <Label Text="{Binding Name,StringFormat='Nombre: {0:F0}'}" FontSize="Medium" TextColor="DodgerBlue" FontAttributes="Bold"/>
+                                        <Label Text="{Binding Monto,StringFormat='Monto: {0:F0}'}" FontSize="Medium" FontAttributes="None"/>
+                                        <Label Text="{Binding Fecha,StringFormat='Fecha: {0:F0}'}" FontSize="Medium" FontAttributes="None"/>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                </StackLayout>
+            </ScrollView>
+
+            <Button Grid.Row="0" Text="Filtrar" Clicked="FilterGastosEmployee"  FontAttributes="Bold" 
+                    HorizontalOptions="End" VerticalOptions="End" 
+                    HeightRequest="50" WidthRequest="100" CornerRadius="20" Margin="0,0,20,20"
+                    BackgroundColor="#e94560" TextColor="White" x:Name="filterBtn"/>
+
+        </Grid>
+
+        
+    </ContentPage.Content>
+</ContentPage>

@@ -8,21 +8,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CRUDSample.EmployeePage.xaml", "EmployeePage.xaml", typeof(global::CRUDSample.EmployeePage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CRUDSample.views.ExpensePage.xaml", "views/ExpensePage.xaml", typeof(global::CRUDSample.ExpensePage))]
 
 namespace CRUDSample {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("EmployeePage.xaml")]
-    public partial class EmployeePage : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("views\\ExpensePage.xaml")]
+    public partial class ExpensePage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.ListView EmployeeList;
+        private global::Xamarin.Forms.ListView SaliList;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(EmployeePage));
-            EmployeeList = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "EmployeeList");
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ExpensePage));
+            SaliList = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "SaliList");
         }
     }
 }

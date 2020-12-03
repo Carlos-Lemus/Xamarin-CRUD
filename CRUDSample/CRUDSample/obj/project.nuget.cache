@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "uk0weMLrgZ9X600XzWqDe5rY+S7ce5xb+RCphOmNqEDY35Ru11691DVsrKobuFzjIOPCSjUa8ZQz6LBP16H8cw==",
+  "dgSpecHash": "huEWbmKO1LOC7/EjQP29qvc/aHNikABbYembQmk/+6+5x+n6naV1/tVa9SabZNtHG995rZ1KZIe9YWZcOEBEdQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DELL\\Documents\\GitHub\\Xamarin-CRUD\\CRUDSample\\CRUDSample\\CRUDSample.csproj",
+  "projectFilePath": "C:\\Users\\carlo\\Downloads\\Xamarin-CRUD\\CRUDSample\\CRUDSample\\CRUDSample.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\sqlite-net-pcl\\1.5.231\\sqlite-net-pcl.1.5.231.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\sqlitepclraw.bundle_green\\1.1.11\\sqlitepclraw.bundle_green.1.1.11.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\sqlitepclraw.core\\1.1.11\\sqlitepclraw.core.1.1.11.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\thrivegmbh.bottomnavigationbar.xf\\1.0.2\\thrivegmbh.bottomnavigationbar.xf.1.0.2.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\xamarin.forms\\3.3.0.967583\\xamarin.forms.3.3.0.967583.nupkg.sha512"
+    "C:\\Users\\carlo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\carlo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\carlo\\.nuget\\packages\\sqlite-net-pcl\\1.5.231\\sqlite-net-pcl.1.5.231.nupkg.sha512",
+    "C:\\Users\\carlo\\.nuget\\packages\\sqlitepclraw.bundle_green\\1.1.11\\sqlitepclraw.bundle_green.1.1.11.nupkg.sha512",
+    "C:\\Users\\carlo\\.nuget\\packages\\sqlitepclraw.core\\1.1.11\\sqlitepclraw.core.1.1.11.nupkg.sha512",
+    "C:\\Users\\carlo\\.nuget\\packages\\thrivegmbh.bottomnavigationbar.xf\\1.0.2\\thrivegmbh.bottomnavigationbar.xf.1.0.2.nupkg.sha512",
+    "C:\\Users\\carlo\\.nuget\\packages\\xamarin.forms\\3.3.0.967583\\xamarin.forms.3.3.0.967583.nupkg.sha512"
   ],
   "logs": [
     {

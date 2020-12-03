@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CRUDSample.AddSalida.xaml", "AddSalida.xaml", typeof(global::CRUDSample.AddSalida))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CRUDSample.views.AddSalida.xaml", "views/AddSalida.xaml", typeof(global::CRUDSample.AddSalida))]
 
 namespace CRUDSample {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("AddSalida.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("views\\AddSalida.xaml")]
     public partial class AddSalida : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -53,6 +53,9 @@ namespace CRUDSample {
         private global::Xamarin.Forms.Label monto_valido;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Picker pickerEmployee;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Button Btn;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -70,6 +73,7 @@ namespace CRUDSample {
             monto_txt = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::CRUDSample.Validaciones.MontoValidatorBehavior>(this, "monto_txt");
             lbl6 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "lbl6");
             monto_valido = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "monto_valido");
+            pickerEmployee = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "pickerEmployee");
             Btn = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "Btn");
         }
     }

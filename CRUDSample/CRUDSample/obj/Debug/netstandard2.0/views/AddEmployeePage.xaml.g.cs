@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CRUDSample.AddEmployeePage.xaml", "AddEmployeePage.xaml", typeof(global::CRUDSample.AddEmployeePage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CRUDSample.views.AddEmployeePage.xaml", "views/AddEmployeePage.xaml", typeof(global::CRUDSample.AddEmployeePage))]
 
 namespace CRUDSample {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("AddEmployeePage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("views\\AddEmployeePage.xaml")]
     public partial class AddEmployeePage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

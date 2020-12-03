@@ -26,6 +26,16 @@ namespace CRUDSample
         [MaxLength(256)]
         public string Fecha { get; set; }
         [MaxLength(256)]
-        public string Monto { get; set; }
+        public double Monto { get; set; }
+        [Indexed]
+        public int Id { get; set; }
     }
+
+    public class GastosEmployee
+    {
+        public string Name { get; set; }
+        public double Monto { get; set; }
+        public string Fecha { get; set; }
+    }
+
 }

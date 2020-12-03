@@ -1063,24 +1063,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {},
+    "C:\\Users\\carlo\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\Documents\\GitHub\\Xamarin-CRUD\\CRUDSample\\CRUDSample.Android\\CRUDSample.Android.csproj",
+      "projectUniqueName": "C:\\Users\\carlo\\Downloads\\Xamarin-CRUD\\CRUDSample\\CRUDSample.Android\\CRUDSample.Android.csproj",
       "projectName": "CRUDSample.Android",
-      "projectPath": "C:\\Users\\DELL\\Documents\\GitHub\\Xamarin-CRUD\\CRUDSample\\CRUDSample.Android\\CRUDSample.Android.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\Documents\\GitHub\\Xamarin-CRUD\\CRUDSample\\CRUDSample.Android\\obj\\",
+      "projectPath": "C:\\Users\\carlo\\Downloads\\Xamarin-CRUD\\CRUDSample\\CRUDSample.Android\\CRUDSample.Android.csproj",
+      "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\carlo\\Downloads\\Xamarin-CRUD\\CRUDSample\\CRUDSample.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1094,8 +1094,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\DELL\\Documents\\GitHub\\Xamarin-CRUD\\CRUDSample\\CRUDSample\\CRUDSample.csproj": {
-              "projectPath": "C:\\Users\\DELL\\Documents\\GitHub\\Xamarin-CRUD\\CRUDSample\\CRUDSample\\CRUDSample.csproj"
+            "C:\\Users\\carlo\\Downloads\\Xamarin-CRUD\\CRUDSample\\CRUDSample\\CRUDSample.csproj": {
+              "projectPath": "C:\\Users\\carlo\\Downloads\\Xamarin-CRUD\\CRUDSample\\CRUDSample\\CRUDSample.csproj"
             }
           }
         }

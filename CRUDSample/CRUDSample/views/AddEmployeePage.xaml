@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             x:Class="CRUDSample.AddEmployeePage" Title="Add Employee"
+             xmlns:local2="clr-namespace:CRUDSample.Validaciones">
+    <!-- Se agrega la direccion donde estan la validaciones   -->
+
+    <ContentPage.Content>
+        <StackLayout Padding="10" WidthRequest="300"
+            HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+
+            <!-- Aqui inicia lo del campo nombre    -->
+            <Label Text="Nombre" FontSize="Medium" FontAttributes="Bold" TextColor="DodgerBlue"/>
+
+            <Entry Placeholder="Nombre" Margin="5" FontSize="Medium" HorizontalOptions="FillAndExpand" x:Name="name">
+                <!-- Se agregan el Behavior correspondiente  -->
+                <Entry.Behaviors>
+                    <local2:NameValidatorBehavior
+                     x:Name="name_txt"></local2:NameValidatorBehavior>
+                </Entry.Behaviors>
+            </Entry>
+            <!-- Este label muestra el mensaje que viene desde la clase de validacion    -->
+            <Label x:Name="lbl" BindingContext="{x:Reference Name=name_txt}" Text="{Binding Path=msg}" TextColor="Red"></Label>
+            <!-- En este se guarda el valor de la variable booleana Validacion, esto se hace para usarlo en el MultiTrigger    -->
+            <Label x:Name="name_valido" BindingContext="{x:Reference Name=name_txt}" Text="{Binding Path=Valido}" FontSize="5" IsVisible="False"></Label>
+
+
+            <!-- Aqui inicia lo del campo NIT    -->
+            <Label Text="NIT" FontSize="Medium" FontAttributes="Bold" TextColor="DodgerBlue"/>
+
+            <Entry Placeholder="0000-000000-000-0" Margin="5" FontSize="Medium" HorizontalOptions="FillAndExpand" x:Name="nit">
+                <!-- Se agregan el Behavior correspondiente  -->
+                <Entry.Behaviors>
+                    <local2:NITValidatorBehavior
+                     x:Name="nit_txt"></local2:NITValidatorBehavior>
+                </Entry.Behaviors>
+            </Entry>
+            <!-- Este label muestra el mensaje que viene desde la clase de validacion    -->
+            <Label x:Name="lbl2" BindingContext="{x:Reference Name=nit_txt}" Text="{Binding Path=msgnit}" TextColor="Red"></Label>
+            <!-- En este se guarda el valor de la variable booleana NITValidacion, esto se hace para usarlo en el MultiTrigger    -->
+            <Label x:Name="nit_valido" BindingContext="{x:Reference Name=nit_txt}" Text="{Binding Path=NITValido}" FontSize="5" IsVisible="False"></Label>
+
+
+            <!-- Aqui inicia lo del campo DUI    -->
+            <Label Text="DUI" FontSize="Medium" FontAttributes="Bold" TextColor="DodgerBlue"/>
+
+            <Entry Placeholder="00000000-0" Margin="5" FontSize="Medium" HorizontalOptions="FillAndExpand" x:Name="dui">
+                <!-- Se agregan el Behavior correspondiente  -->
+                <Entry.Behaviors>
+                    <local2:DUIValidatorBehavior
+                     x:Name="dui_txt"></local2:DUIValidatorBehavior>
+                </Entry.Behaviors>
+            </Entry>
+            <!-- Este label muestra el mensaje que viene desde la clase de validacion    -->
+            <Label x:Name="lbl3" BindingContext="{x:Reference Name=dui_txt}" Text="{Binding Path=msgdui}" TextColor="Red"></Label>
+            <!-- En este se guarda el valor de la variable booleana NITValidacion, esto se hace para usarlo en el MultiTrigger    -->
+            <Label x:Name="dui_valido" BindingContext="{x:Reference Name=dui_txt}" Text="{Binding Path=DUIValido}" FontSize="5" IsVisible="False"></Label>
+
+
+            <Frame Margin="10" Padding="0" CornerRadius="15" HasShadow="True" HorizontalOptions="FillAndExpand" IsClippedToBounds="False">
+
+                <!-- Al boton se le agrega el MultiTrigger para comprobar que el valor de las tres validaciones sea True, y entonces activar el botón   -->
+                <Button Text="Guardar" Clicked="SaveEmployee" HorizontalOptions="FillAndExpand" 
+                        BackgroundColor="DodgerBlue" TextColor="White" x:Name="saveBtn" IsEnabled="False">
+                    <!-- Se inicia con el botón desactivado -->
+                    <Button.Triggers>
+                        <MultiTrigger TargetType="Button">
+                            <MultiTrigger.Conditions>
+                                <!-- Aqui estan las tres condiciones para activar el boton, son los valores de las variables de validacion,
+                                todas deben ser True para cumplirse la condición -->
+                                <BindingCondition Binding="{Binding Source={x:Reference name_valido}, Path=Text }" Value="True"  />
+                                <BindingCondition Binding="{Binding Source={x:Reference nit_valido}, Path=Text}" Value="True" />
+                                <BindingCondition Binding="{Binding Source={x:Reference dui_valido}, Path=Text}" Value="True" />
+                            </MultiTrigger.Conditions>
+                            <!-- Cuando la condicion se cumple se activa el botón -->
+                            <Setter Property = "IsEnabled" Value = "True" />
+                        </MultiTrigger>
+                    </Button.Triggers>
+                </Button>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -27,5 +27,12 @@ namespace CRUDSample
         bool UpdateSalida(Salida salida);
         void DeleteSalida(int Ids);
 
+        List<string> getIdEmployee();
+
+        List<GastosEmployee> GetGastosEmployee();
+        List<GastosEmployee> FilterGastosEmployee(string fechaInicio, string fechaFinal);
+
+        double GetTotalGastos();
+
     }
 }

@@ -16,7 +16,7 @@
                  Icon="expenses.png"
                  xf:BottomBarPageExtensions.TabColor="#5D4037"/>
 
-    <ContentPage Title="Totales"
+    <local:ReportePage Title="Totales"
                  Icon="money.png"
                  xf:BottomBarPageExtensions.TabColor="#7B1FA2"/>
 </xf:BottomBarPage>
